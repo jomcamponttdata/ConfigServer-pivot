@@ -1,0 +1,12 @@
+spring:
+  data:
+    mongodb:
+      uri: ${TRANSACTION_MONGODB_URI:mongodb://localhost:27017/movement_db}
+  mongodb:
+    representation:
+      uuid: standard
+server:
+  port: ${TRANSACTION_SERVICE_PORT:8084}
+logging:
+  level:
+    com.pivot.banking.transaction: INFO
