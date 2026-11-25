@@ -10,3 +10,9 @@ server:
 logging:
   level:
     com.pivot.banking.transaction: INFO
+
+resilience4j:
+  timelimiter:
+    configs:
+      default:
+        timeout-duration: 2s
